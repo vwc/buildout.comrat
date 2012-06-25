@@ -1,0 +1,17 @@
+comrat.sitecontent Installation
+-------------------------------
+
+To install comrat.sitecontent using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``comrat.sitecontent`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        comrat.sitecontent
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
