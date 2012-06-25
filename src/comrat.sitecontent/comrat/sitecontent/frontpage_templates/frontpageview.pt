@@ -1,0 +1,102 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="amap.mapview">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+  <div id="frontpage-view"
+    tal:define="portal_state context/@@plone_portal_state;
+                portal_url portal_state/portal_url;
+                context_url context/absolute_url">
+    <div class="row-fluid">
+        <div class="span6">
+            <section class="box">
+                <header>
+                    <a href="#"
+                        class="link-circled pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        <i class="icon-star" /></a>
+                    <a href="#"
+                        class="link-more pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        Mehr</a>
+                    <h2>Gut trinken</h2>
+                </header>
+                <article>
+                    <p>Content here</p>
+                    <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-1" />
+                </article>
+            </section>
+        </div>
+        <div class="span6">
+            <section class="box">
+                <header>
+                    <a href="#"
+                        class="link-circled pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        <i class="icon-star" /></a>
+                    <a href="#"
+                        class="link-more pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        Mehr</a>
+                    <h2>Gut essen</h2>
+                </header>
+                <article>
+                    <p>Content here</p>
+                    <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-2" />
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span6">
+            <section class="box">
+                <header>
+                    <a href="#"
+                        class="link-circled pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        <i class="icon-star" /></a>
+                    <a href="#"
+                        class="link-more pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        Mehr</a>
+                    <h2>G&uuml;nni's Ecke</h2>
+                </header>
+                <article>
+                    <p>Content here</p>
+                    <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-3" />
+                </article>
+            </section>
+        </div>
+        <div class="span6">
+            <section class="box">
+                <header>
+                    <a href="#"
+                        class="link-circled pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        <i class="icon-star" /></a>
+                    <a href="#"
+                        class="link-more pull-right"
+                        tal:attributes="href python:portal_url + '/trinken'">
+                        Mehr</a>
+                    <h2>Gut ankommen</h2>
+                </header>
+                <article>
+                    <p>Content here</p>
+                    <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-4" />
+                </article>
+            </section>
+        </div>
+    </div>
+  </div>
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
