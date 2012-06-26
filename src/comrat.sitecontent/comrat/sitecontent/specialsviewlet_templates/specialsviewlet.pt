@@ -1,0 +1,27 @@
+<div id="specials-block"
+    tal:define="portal_state context/@@plone_portal_state;
+                portal_url portal_state/portal_url">
+    <div class="box">
+        <div class="box-header">
+            <h3>Guter Rat ist g&uuml;nstig</h3>
+        </div>
+
+        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox" />
+        <div class="box-divider">
+            <div class="box-stars">
+                <i class="icon-star" />
+                <i class="icon-star" />
+                <i class="icon-star" />
+            </div>
+        </div>
+        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox" />
+        <div class="box-divider">
+            <div class="box-stars">
+                <i class="icon-star" />
+                <i class="icon-star" />
+                <i class="icon-star" />
+            </div>
+        </div>
+        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox" />
+    </div>
+</div>
