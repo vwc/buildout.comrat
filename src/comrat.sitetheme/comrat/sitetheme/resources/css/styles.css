@@ -4475,9 +4475,6 @@ body {
 .icon-x-large {
   font-size: 60px;
 }
-header {
-  min-height: 80px;
-}
 header #logo {
   padding: 0px;
   margin-top: 18px;
@@ -4505,6 +4502,21 @@ header #logo {
 }
 .box .box-header h3:first-letter {
   color: #e53319;
+}
+.link-more {
+  font-size: 11px;
+  color: #797368;
+  text-transform: uppercase;
+}
+.link-circled {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #555555;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 5px;
+  text-align: center;
 }
 .discreet {
   color: #666;
@@ -4744,4 +4756,7 @@ footer {
   background: url(../img/line-noisy.png) repeat-x 0px 0px transparent;
   margin-top: 18px;
   padding: 18px 0;
+}
+footer a {
+  color: #333333;
 }

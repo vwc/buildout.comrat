@@ -16,7 +16,7 @@
     <div class="row-fluid">
         <div class="span6">
             <section class="box">
-                <header>
+                <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
@@ -25,7 +25,7 @@
                         class="link-more pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
                         Mehr</a>
-                    <h2>Gut trinken</h2>
+                    <h3>Gut trinken</h3>
                 </header>
                 <article>
                     <p>Content here</p>
@@ -35,7 +35,7 @@
         </div>
         <div class="span6">
             <section class="box">
-                <header>
+                <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
@@ -44,7 +44,7 @@
                         class="link-more pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
                         Mehr</a>
-                    <h2>Gut essen</h2>
+                    <h3>Gut essen</h3>
                 </header>
                 <article>
                     <p>Content here</p>
@@ -56,7 +56,7 @@
     <div class="row-fluid">
         <div class="span6">
             <section class="box">
-                <header>
+                <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
@@ -65,7 +65,7 @@
                         class="link-more pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
                         Mehr</a>
-                    <h2>G&uuml;nni's Ecke</h2>
+                    <h3>G&uuml;nni's Ecke</h3>
                 </header>
                 <article>
                     <p>Content here</p>
@@ -75,7 +75,7 @@
         </div>
         <div class="span6">
             <section class="box">
-                <header>
+                <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
@@ -84,7 +84,7 @@
                         class="link-more pull-right"
                         tal:attributes="href python:portal_url + '/trinken'">
                         Mehr</a>
-                    <h2>Gut ankommen</h2>
+                    <h3>Gut ankommen</h3>
                 </header>
                 <article>
                     <p>Content here</p>

@@ -15,7 +15,6 @@ body {
 }
 
 header {
-    min-height: 80px;
     #logo {
         padding: 0px;
         margin-top: @baseLineHeight;
@@ -41,6 +40,20 @@ header {
         }
     }
   }
+}
+
+.link-more {
+    font-size: @baseFontSize - 2;
+    color: @textColor;
+    text-transform: uppercase;
+}
+
+.link-circled {
+    .square(@baseLineHeight + 2);
+    border: 1px solid @gray;
+    .border-radius(50%);
+    margin-left: 5px;
+    text-align: center;
 }
 
 .discreet {
@@ -290,4 +303,7 @@ footer {
     background: url(../img/line-noisy.png) repeat-x 0px 0px transparent;
     margin-top: @baseLineHeight;
     padding: @baseLineHeight 0;
+    a {
+        color: @grayDark;
+    }
 }
