@@ -6,7 +6,7 @@
             <h3>Guter Rat ist g&uuml;nstig</h3>
         </div>
 
-        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox" />
+        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox1" />
         <div class="box-divider">
             <div class="box-stars">
                 <i class="icon-star" />
@@ -14,7 +14,7 @@
                 <i class="icon-star" />
             </div>
         </div>
-        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox" />
+        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox2" />
         <div class="box-divider">
             <div class="box-stars">
                 <i class="icon-star" />
@@ -22,6 +22,6 @@
                 <i class="icon-star" />
             </div>
         </div>
-        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox" />
+        <div tal:attributes="data-tile string:${portal_url}/@@vwc.tiles.plaintext/specialsbox3" />
     </div>
 </div>

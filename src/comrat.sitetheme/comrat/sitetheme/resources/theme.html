@@ -29,7 +29,14 @@
   </head>
 
   <body>
-    <header>
+    <header id="editbar-wrapper">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container-fluid" id="editbar">Test</div>
+        </div>
+      </div>
+    </header>
+    <header class="main-nav">
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
@@ -41,17 +48,23 @@
           <a class="brand" href="#" id="logo">Der Commerzienrat</a>
           <div class="nav-collapse pull-right">
             <ul class="nav">
-              <li class="active"><a href="#">Trinken</a></li>
-              <li><a href="#about">Essen</a></li>
-              <li><a href="#specials">Specials</a></li>
-              <li><a href="#treasures">Sch&auml;tze</a></li>
-              <li><a href="#contact">Kontakt</a></li>
+              <li><a href="/trinken">Trinken</a></li>
+              <li><a href="/essen">Essen</a></li>
+              <li><a href="/specials">Specials</a></li>
+              <li><a href="/schaetze">Sch&auml;tze</a></li>
+              <li><a href="/kontakt">Kontakt</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
     </header>
+
+    <section id="banner-wrapper" class="container">
+      <div class="hero-unit">
+        <h2>Banners are inserted here</h2>
+      </div>
+    </section>
 
     <section class="container">
       <div class="row-fluid">
@@ -70,6 +83,13 @@
               <p>Side information will be displayed here</p>
             </div>
           </aside>
+          <aside id="fb-box">
+            <div class="box">
+              <div class="box-header">
+                <h3>Go Facebook</h3>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section> <!-- /container -->
@@ -79,8 +99,8 @@
       <div class="row-fixed">
         <div class="span6">
           <p>&copy; 2012 Commerzienrat All rights reserved
-            / <a href="#imprint">Impressum</a>
-            / <a href="#contact">Kontakt</a>
+            / <a href="/impressum">Impressum</a>
+            / <a href="/kontakt">Kontakt</a>
           </p>
         </div>
         <div class="span6">

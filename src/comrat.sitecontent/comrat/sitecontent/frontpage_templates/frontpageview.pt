@@ -28,7 +28,6 @@
                     <h3>Gut trinken</h3>
                 </header>
                 <article>
-                    <p>Content here</p>
                     <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-1" />
                 </article>
             </section>
@@ -47,7 +46,6 @@
                     <h3>Gut essen</h3>
                 </header>
                 <article>
-                    <p>Content here</p>
                     <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-2" />
                 </article>
             </section>
@@ -68,7 +66,6 @@
                     <h3>G&uuml;nni's Ecke</h3>
                 </header>
                 <article>
-                    <p>Content here</p>
                     <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-3" />
                 </article>
             </section>
@@ -87,7 +84,6 @@
                     <h3>Gut ankommen</h3>
                 </header>
                 <article>
-                    <p>Content here</p>
                     <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-4" />
                 </article>
             </section>

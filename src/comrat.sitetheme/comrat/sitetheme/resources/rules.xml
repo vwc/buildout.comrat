@@ -4,7 +4,7 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <!--<theme href="minimal.html" if-path="@@edit-tile" />-->
+    <theme href="minimal.html" if-path="@@edit-tile" />
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
@@ -32,17 +32,17 @@
             <link rel="shortcut icon" href="/++theme++meetshaus.jmstheme/images/favicon.ico" type="images/x-icon" />
         </after>-->
 
-        <replace css:theme="#editbar"
-            content="//div[@data-iframe='toolbar']" />
+        <!--<replace css:theme="#editbar"
+            content="//div[@data-iframe='toolbar']" />-->
 
         <!-- Copy over the id/class attributes on the body tag.
              This is important for per-section styling -->
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
 
-        <drop css:theme="#editbar"
+        <drop css:theme="#editbar-wrapper"
             css:if-content="#anon-personalbar" />
-        <replace css:theme-children="#edit-bar-wrapper" css:content="#edit-bar" />
+        <replace css:theme-children="#editbar" css:content="#edit-bar" />
         <replace css:theme-children="#personal-tools" 
             css:content-children="#portal-personaltools" />
 
@@ -51,7 +51,10 @@
 
         <!-- Site actions -->
         <!--<replace css:content="#portal-siteactions li" css:theme-children="#global-nav" />-->
-
+        <drop css:theme="#banner-wrapper"
+            css:if-not-content="#banner-viewlet" />
+        <replace css:content="#banner-viewlet" css:theme-children="#banner-wrapper"
+            css:if-content="#banner-viewlet" />
         <copy attributes="action" css:content="#portal-searchbox form"
             css:theme="#portal-searchbox" />
 
@@ -68,6 +71,7 @@
         <!-- Columns -->
         <!--<replace css:content-children="#portal-column-one > *" css:theme-children="#column-one" />-->
         <!--<replace css:content-children="#portal-column-two > *" css:theme-children="#sidebar" />-->
+        <replace css:content="#specials-block" css:theme-children="#sidebar" />
 
     </rules>
 

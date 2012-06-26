@@ -1,0 +1,20 @@
+<div id="banner-viewlet"
+    tal:condition="viewlet/has_banners"
+    tal:define="portal_state context/@@plone_portal_state;
+                portal_url portal_state/portal_url">
+    <div id="banner-scrollable">
+        <div class="items">
+            <tal:block tal:repeat="item viewlet/banners">
+                <div class="item"
+                    tal:define="item_obj item/getObject">
+                    <img tal:define="scales item_obj/@@images;
+                                     banner python:scales.scale('image', scale='preview');"
+                        tal:condition="banner"
+                        tal:attributes="src banner/url;
+                                        width banner/width;
+                                        height banner/height" />
+                </div>
+            </tal:block>
+        </div>
+    </div>
+</div>
