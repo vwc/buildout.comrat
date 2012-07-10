@@ -4902,6 +4902,9 @@ header.main-nav #logo {
 #editbar-wrapper .navbar-inner {
   min-height: 40px;
 }
+body.template-frontpage-view header.main-nav .navbar {
+  margin-bottom: 0px;
+}
 body.template-frontpage-view #logo {
   margin-top: 0px;
   background: url(../img/logo-portrait.png) no-repeat 0px 0px transparent;
@@ -4918,6 +4921,7 @@ body.template-frontpage-view #logo {
   position: relative;
   overflow: hidden;
   width: 900px;
+  margin: 0px 20px;
   height: 380px;
 }
 #banner-wrapper #banner-scrollable .items {
@@ -4925,8 +4929,57 @@ body.template-frontpage-view #logo {
   position: absolute;
 }
 #banner-wrapper #banner-scrollable .items div.item {
-  float: left;
+  position: absolute;
   width: 900px;
+}
+#banner-slideshow {
+  /* tabs (those little circles below slides) */
+
+}
+#banner-slideshow .images {
+  position: relative;
+  height: 360px;
+  width: 940px;
+  float: left;
+  margin: 0px;
+  cursor: pointer;
+}
+#banner-slideshow .images div {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0;
+  height: 380px;
+  font-size: 12px;
+}
+#banner-slideshow .slidetabs {
+  clear: both;
+}
+#banner-slideshow .slidetabs a {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  margin: 3px;
+  background: #797368;
+  display: block;
+  font-size: 1px;
+}
+#banner-slideshow .slidetabs a:hover {
+  background: #333333;
+}
+#banner-slideshow .slidetabs a.current {
+  background: #333333;
+}
+/* single tab */
+/* mouseover state */
+/* active state (current page state) */
+.slidetabs a.current {
+  background: #999999;
 }
 .box {
   min-height: 20px;

@@ -45,6 +45,9 @@ header.main-nav {
 }
 
 body.template-frontpage-view {
+    header.main-nav .navbar {
+        margin-bottom: 0px;
+    }
     #logo {
         margin-top: 0px;
         background:url(../img/logo-portrait.png) no-repeat 0px 0px transparent;
@@ -61,17 +64,72 @@ body.template-frontpage-view {
         position:relative;
         overflow:hidden;
         width: 900px;
+        margin: 0px 20px;
         height:380px;
         .items {
             width:20000em;
             position:absolute;
             div.item {
-                float:left;
+                //float:left;
+                position: absolute;
                 width: 900px;
             }
         }
     }
 }
+#banner-slideshow {
+    .images {
+        position:relative;
+        height:360px;
+    
+        width:940px;
+        float:left;
+        margin:0px;
+        cursor:pointer;
+        div {
+            display:none;
+            position:absolute;
+            top:0;
+            left:0;
+            margin:0px;
+            padding:0;
+            height:380px;
+            font-size:12px;
+        }
+    }
+    /* tabs (those little circles below slides) */
+    .slidetabs {
+        clear:both;
+        //margin-left:310px;
+        a {
+            .square(8px);
+            .border-radius(50%);
+            float:left;
+            margin:3px;
+            background:@textColor;
+            display:block;
+            font-size:1px;
+            &:hover {
+                background:@grayDark;
+            }
+            &.current {
+                background:@grayDark;
+            }
+        }
+    }
+}
+
+/* single tab */
+.slidetabs 
+
+/* mouseover state */
+.slidetabs 
+
+/* active state (current page state) */
+.slidetabs a.current {
+    background:@grayLight;
+}
+
 
 .box {
   min-height: 20px;

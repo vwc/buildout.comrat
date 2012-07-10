@@ -2,18 +2,23 @@
     tal:condition="viewlet/has_banners"
     tal:define="portal_state context/@@plone_portal_state;
                 portal_url portal_state/portal_url">
-    <div id="banner-scrollable">
-        <div class="items">
+    <div id="banner-slideshow">
+        <div class="images">
             <tal:block tal:repeat="item viewlet/banners">
                 <div class="item"
                     tal:define="item_obj item/getObject">
-                    <img tal:define="scales item_obj/@@images;
-                                     banner python:scales.scale('image', scale='preview');"
-                        tal:condition="banner"
-                        tal:attributes="src banner/url;
-                                        width banner/width;
-                                        height banner/height" />
+                    <!--<img tal:replace="structure item_obj/@@images/image" />-->
+                    <img tal:define="scale item_obj/@@images"
+                        tal:replace="structure python: scale.scale('image',
+                                     width=940, height=360, direction='down').tag()" />
                 </div>
+            </tal:block>
+        </div>
+        <div class="slidetabs offset5">
+            <tal:block tal:repeat="item viewlet/banners">
+                <a href="#"
+                    tal:define="item_id item/getId;"
+                    tal:attributes="href python:'#' + item_id"></a>
             </tal:block>
         </div>
     </div>
