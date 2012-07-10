@@ -3,7 +3,7 @@
     tal:define="portal_state context/@@plone_portal_state;
                 portal_url portal_state/portal_url">
     <div id="banner-slideshow">
-        <div class="images">
+        <div class="images pull-left">
             <tal:block tal:repeat="item viewlet/banners">
                 <div class="item"
                     tal:define="item_obj item/getObject">

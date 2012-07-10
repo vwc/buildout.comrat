@@ -64,10 +64,7 @@ body.template-frontpage-view {
 #banner-slideshow {
     .images {
         position:relative;
-        height:360px;
-    
-        width:940px;
-        float:left;
+        .size(360px, 940px);
         margin:0px;
         cursor:pointer;
         div {
@@ -78,7 +75,7 @@ body.template-frontpage-view {
             margin:0px;
             padding:0;
             height:380px;
-            font-size:12px;
+            font-size:@baseFontSize;
         }
     }
     /* tabs (those little circles below slides) */

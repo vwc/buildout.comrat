@@ -4923,9 +4923,8 @@ body.template-frontpage-view #logo {
 }
 #banner-slideshow .images {
   position: relative;
-  height: 360px;
   width: 940px;
-  float: left;
+  height: 360px;
   margin: 0px;
   cursor: pointer;
 }
@@ -4937,7 +4936,7 @@ body.template-frontpage-view #logo {
   margin: 0px;
   padding: 0;
   height: 380px;
-  font-size: 12px;
+  font-size: 13px;
 }
 #banner-slideshow .slidetabs {
   clear: both;
