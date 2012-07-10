@@ -4917,21 +4917,6 @@ body.template-frontpage-view #logo {
   min-height: 400px;
   margin-bottom: 18px;
 }
-#banner-wrapper #banner-scrollable {
-  position: relative;
-  overflow: hidden;
-  width: 900px;
-  margin: 0px 20px;
-  height: 380px;
-}
-#banner-wrapper #banner-scrollable .items {
-  width: 20000em;
-  position: absolute;
-}
-#banner-wrapper #banner-scrollable .items div.item {
-  position: absolute;
-  width: 900px;
-}
 #banner-slideshow {
   /* tabs (those little circles below slides) */
 
