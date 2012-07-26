@@ -37,11 +37,11 @@
                 <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
-                        tal:attributes="href python:portal_url + '/trinken'">
+                        tal:attributes="href python:portal_url + '/esse'">
                         <i class="icon-star" /></a>
                     <a href="#"
                         class="link-more pull-right"
-                        tal:attributes="href python:portal_url + '/trinken'">
+                        tal:attributes="href python:portal_url + '/essen'">
                         Mehr</a>
                     <h3>Gut essen</h3>
                 </header>
@@ -57,11 +57,11 @@
                 <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
-                        tal:attributes="href python:portal_url + '/trinken'">
+                        tal:attributes="href python:portal_url + '/schaetze'">
                         <i class="icon-star" /></a>
                     <a href="#"
                         class="link-more pull-right"
-                        tal:attributes="href python:portal_url + '/trinken'">
+                        tal:attributes="href python:portal_url + '/schaetze'">
                         Mehr</a>
                     <h3>G&uuml;nni's Ecke</h3>
                 </header>
@@ -75,11 +75,11 @@
                 <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
-                        tal:attributes="href python:portal_url + '/trinken'">
+                        tal:attributes="href python:portal_url + '/kontakt'">
                         <i class="icon-star" /></a>
                     <a href="#"
                         class="link-more pull-right"
-                        tal:attributes="href python:portal_url + '/trinken'">
+                        tal:attributes="href python:portal_url + '/kontakt'">
                         Mehr</a>
                     <h3>Gut ankommen</h3>
                 </header>

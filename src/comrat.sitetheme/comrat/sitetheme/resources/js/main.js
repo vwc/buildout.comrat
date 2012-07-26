@@ -13,11 +13,19 @@
             $('a[rel=tooltip]').tooltip();
             $('span[rel=twipsy]').tooltip();
         });
-        $("#banner-scrollable").scrollable({
-            circular: true,
-            speed: 3500
-        }).autoscroll({
-            interval: 2000
+        $(".slidetabs").tabs('.images > div', {
+            effect: 'fade',
+            fadeOutSpeed: 1000,
+            rotate: true
+        }).slideshow({
+            autoplay: true,
+            interval: 6000
         });
+        //$("#banner-scrollable").scrollable({
+        //    circular: true,
+        //    speed: 3500
+        //}).autoscroll({
+        //    interval: 2000
+        //});
     });
 }(jQuery));
