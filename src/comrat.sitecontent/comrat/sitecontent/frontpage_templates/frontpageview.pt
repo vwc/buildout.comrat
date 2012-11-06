@@ -37,7 +37,7 @@
                 <header class="box-header">
                     <a href="#"
                         class="link-circled pull-right"
-                        tal:attributes="href python:portal_url + '/esse'">
+                        tal:attributes="href python:portal_url + '/essen'">
                         <i class="icon-star" /></a>
                     <a href="#"
                         class="link-more pull-right"
