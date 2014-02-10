@@ -26,7 +26,9 @@ setup(name='comrat.sitecontent',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity',
+          'plone.api',
+          'plone.app.dexterity [grok, relations]',
+          'plone.app.relationfield',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
       ],
