@@ -67,15 +67,13 @@
         <div class="span6">
             <section class="box">
                 <header class="box-header">
-                    <a href="#"
-                        class="link-circled pull-right"
-                        tal:attributes="href python:portal_url + '/schaetze'">
+                    <a href="http://www.yovite.com/Restaurant-Gutschein-R-76817285.html?REF=REST"
+                        class="link-circled pull-right">
                         <i class="icon-star" /></a>
-                    <a href="#"
-                        class="link-more pull-right"
-                        tal:attributes="href python:portal_url + '/schaetze'">
+                    <a href="http://www.yovite.com/Restaurant-Gutschein-R-76817285.html?REF=REST"
+                        class="link-more pull-right">
                         Mehr</a>
-                    <h3>G&uuml;nni's Ecke</h3>
+                    <h3>Gutes schenken</h3>
                 </header>
                 <article>
                     <div class="tile" tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-3" />
